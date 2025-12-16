@@ -4,7 +4,12 @@ import 'dotenv/config'
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      on('task', {
+        log(message) {
+          console.log(baseUrl);
+          return null;
+        },
+      });
     },
     baseUrl: process.env.CYPRESS_baseUrl
   },

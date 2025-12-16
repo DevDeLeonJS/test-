@@ -20,4 +20,4 @@ jobs:
       - name: Run Cypress
         env:
           CYPRESS_baseUrl: ${{ github.event.client_payload.base_url }}
-        run: npx cypress run
+        run: npx cypress run --browser chrome 
