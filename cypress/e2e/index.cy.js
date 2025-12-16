@@ -1,9 +1,6 @@
 describe('pruebiats app remota', () => {
-
-    
-    console.log('url: ', process.env.CYPRESS_baseUrl);
-
     it('web main online', () => {
+        cy.log('Visiting:', Cypress.config('baseUrl'))
         cy.visit('/');
     });
 
