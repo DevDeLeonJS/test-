@@ -1,11 +1,8 @@
 name: Cypress E2E
 
 on:
-  workflow_dispatch:
-    inputs:
-      base_url:
-        description: "Netlify Preview URL"
-        required: true
+  repository_dispatch:
+    types: [run-cypress]
 
 jobs:
   cypress:
@@ -22,5 +19,5 @@ jobs:
 
       - name: Run Cypress
         env:
-          CYPRESS_baseUrl: ${{ inputs.base_url }}
+          CYPRESS_baseUrl: ${{ github.event.client_payload.base_url }}
         run: npx cypress run
