@@ -5,6 +5,6 @@ describe('pruebiats app remota', () => {
 
     it('Should be visible contente main', () => {
         cy.visit('/');
-        cy.contains('Vite + React'); 
+        cy.contains('Vite + React;laksd;laks;dlk;alskd'); 
     });
 });
