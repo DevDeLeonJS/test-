@@ -1,7 +1,22 @@
 {
-  "type": "module",
-  "dependencies": {
-    "cypress": "^15.7.1",
-    "dotenv": "^17.2.3"
+  "name": "test-",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevDeLeonJS/test-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevDeLeonJS/test-/issues"
+  },
+  "homepage": "https://github.com/DevDeLeonJS/test-#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.9"
   }
 }
