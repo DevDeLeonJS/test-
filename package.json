@@ -16,7 +16,7 @@
   "homepage": "https://github.com/DevDeLeonJS/test-#readme",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.57.0",
+    "@playwright/test": "1.57.0",
     "@types/node": "^25.0.9"
   }
 }
