@@ -4,6 +4,7 @@ test('has title', async ({ page }) => {
   await page.goto('http://localhost');
   const text = await page.getByText('Sensortrol').innerText();
   expect(text).toBe('Sensortrol');
+  expect(page).toHaveTitle('Sensortrol');
 });
 
 test('Increment counter with button', async ({ page }) => {
